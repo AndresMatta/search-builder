@@ -19,6 +19,13 @@
           "buildTarget": "api:build:production"
         }
       }
+    },
+    "seed": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node src/db/seed.ts",
+        "cwd": "apps/api"
+      }
     }
   }
 }

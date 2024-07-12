@@ -1,0 +1,19 @@
+{
+  "name": "http-types",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/http-types/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/http-types",
+        "main": "libs/http-types/src/index.ts",
+        "tsConfig": "libs/http-types/tsconfig.lib.json",
+        "assets": ["libs/http-types/*.md"]
+      }
+    }
+  }
+}
